@@ -1,0 +1,21 @@
+<html>
+    <body>
+        {% for i in users %}
+        <ul>
+            <li>
+                {{i.name}}
+            </li>
+            <li>
+                {{i.number}}
+            </li>
+            <li>
+                {{i.email}}
+            </li>
+            <td>
+                <a href = {{ url_for('edit' ,name=i.name) }}>Edit</a> 
+            </td>
+        </ul>
+        {% endfor %} 
+    </body>
+  
+</html>
